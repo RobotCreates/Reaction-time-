@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewport" content="width=device-width, initial scale=1.0" />
+        <link rel="stylesheet" href="AimTrainer.css">
+        <title>Aim trainer</title>
+    </head>
+    <body>
+        <div class="screen">
+            <h1>Aim Trainer</h1>
+            <button class="btn" id="start">Start Game</button>
+        </div>
+        <div class="screen">
+            <h1>Choose Time</h1>
+            <ul class="list" id="time-list">
+                <li>
+                    <button class="btn time-btn" data-time="45">45 sec</button>
+                </li>
+            </ul>
+        </div>
+        <div class="screen">
+            <h1>Choose Difficulty</h1>
+            <ul class="list" id="difficulty-list">
+                <li>
+                    <button class="btn difficulty-btn" data-difficulty="0">Easy</button>
+                </li>
+            </ul>
+        </div>
+        <div class="screen">
+
+            <div class="stats">
+                <div class="info">
+                    <p>Time: <span id="time">00:00</span></p>
+                    <p>Hits: <span id="hits">0</span></p>
+                    <p>Accuracy: <span id="accuracy">100%</span></p>
+                </div>
+            </div>
+            <div class="board" id="board">
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="screen">
+            <h1>Game Over</h1>
+            <div class="results">
+                <p>Hits: <span id="hits-over">0</span></p>
+                <p>Accuracy: <span id="accuracy-over">0%</span></p>
+            </div>
+        </div>
+    <script src="AimTrainer.js"></script>
+    </body>
+</html>
